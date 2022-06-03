@@ -1,15 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AutoCar a la venta</title>
     <link rel="stylesheet" href="assets/css/style.css">
-</head>
-<body>
-    <header></header>
-    <main></main>
-    <footer></footer>
-</body>
+    <title>Autos eléctricos</title>
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="grid-container">
+      <div class="buscador">
+        <p class="indicador-buscador">Ordenar por:</p>
+        <select name="select">
+            <option value="value1" selected>Precio</option>
+            <option value="value2" >Color</option>
+            <option value="value3">Año</option>
+        </select>   
+      </div>
+      
+      <div class="menu-lateral">
+        <div class="iconos-menu">
+          <div class="iconos-izquierda">
+            <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+              <path fill="currentColor" d="M18.92 2C18.72 1.42 18.16 1 17.5 1H6.5C5.84 1 5.29 1.42 5.08 2L3 8V16C3 16.55 3.45 17 4 17H5C5.55 17 6 16.55 6 16V15H18V16C18 16.55 18.45 17 19 17H20C20.55 17 21 16.55 21 16V8L18.92 2M6.5 12C5.67 12 5 11.33 5 10.5S5.67 9 6.5 9 8 9.67 8 10.5 7.33 12 6.5 12M17.5 12C16.67 12 16 11.33 16 10.5S16.67 9 17.5 9 19 9.67 19 10.5 18.33 12 17.5 12M5 7L6.5 2.5H17.5L19 7H5M7 20H11V18L17 21H13V23L7 20Z" />
+            </svg>
+
+            <span class="porte-letra">Electric Cars</span>
+            <i class="fa-solid fa-bars fa-lg" id="hidden-3"></i>
+          </div> 
+        </div>  
+         
+        <div class="hidden-2">
+          <div class="lista-padre">
+            <ul class="lista-hija">
+              <li>Inicio</li>
+              <li>Catálogo</li>
+              <li>Ofertas</li>
+              <li>Contacto</li>
+            </ul>
+          </div>
+        </div> 
+      </div>
+      
+      <div class="menu-principal">
+        <div class="box-cards">
+          <div class="carta">
+            <img src='https://www.smartcargo.cl/uploads/1/1/0/2/11028147/20180320114540-73_orig.png' alt="foto-carta-1"></img>
+            <p class="texto-carta">Model: CityCar</p>
+            <div class="boton-box">
+              <button class="boton">Ver más</button>
+            </div>
+          </div>
+          <div class="carta hidden-2">
+            <img src='https://www.smartcargo.cl/uploads/1/1/0/2/11028147/20180320114540-73_orig.png' alt="foto-carta-2"></img>
+            <p class="texto-carta">Model: CityCar</p>
+            <div class="boton-box">
+              <button class="boton">Ver más</button>
+            </div>
+          </div>
+          <div class="carta hidden">
+            <img src='https://www.smartcargo.cl/uploads/1/1/0/2/11028147/20180320114540-73_orig.png'  alt="foto-carta-3"></img>
+            <p class="texto-carta">Model: CityCar</p>
+            <div class="boton-box">
+              <button class="boton">Ver más</button>
+            </div>
+          </div>
+          <div class="carta hidden">
+            <img src='https://www.smartcargo.cl/uploads/1/1/0/2/11028147/20180320114540-73_orig.png' alt="foto-carta-4"></img>
+            <p class="texto-carta">Model: CityCar</p>
+            <div class="boton-box">
+              <button class="boton">Ver más</button>
+            </div>
+          </div>
+          <div class="carta hidden">
+            <img src='https://www.smartcargo.cl/uploads/1/1/0/2/11028147/20180320114540-73_orig.png' alt="foto-carta-5"></img>
+            <p class="texto-carta">Model: CityCar</p>
+            <div class="boton-box">
+              <button class="boton">Ver más</button>
+            </div>
+          </div>
+          <div class="carta hidden">
+            <img src='https://www.smartcargo.cl/uploads/1/1/0/2/11028147/20180320114540-73_orig.png' alt="foto-carta-6"></img>
+            <p class="texto-carta">Model: CityCar</p>
+            <div class="boton-box">
+              <button class="boton">Ver más</button>
+            </div>
+          </div>
+          <div class="carta hidden">
+            <img src='https://www.smartcargo.cl/uploads/1/1/0/2/11028147/20180320114540-73_orig.png'  alt="foto-carta-7"></img>
+            <p class="texto-carta">Model: CityCar</p>
+            <div class="boton-box">
+              <button class="boton">Ver más</button>
+            </div>
+          </div>
+          <div class="carta hidden">
+            <img src='https://www.smartcargo.cl/uploads/1/1/0/2/11028147/20180320114540-73_orig.png' alt="foto-carta-8"></img>
+            <p class="texto-carta">Model: CityCar</p>
+            <div class="boton-box">
+              <button class="boton">Ver más</button>
+            </div>
+          </div>
+        </div>
+        
+        <div class="paginacion">
+          <nav aria-label="Page navigation example">
+            <ul class="pagination">
+              <li class="page-item">
+                <a class="page-link" href="#" aria-label="Previous">
+                  <span aria-hidden="true">&laquo;</span>
+                </a>
+              </li>
+              <li class="page-item"><a class="page-link" href="#">1</a></li>
+              <li class="page-item"><a class="page-link" href="#">2</a></li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item">
+                <a class="page-link" href="#" aria-label="Next">
+                  <span aria-hidden="true">&raquo;</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>    
+      
+      <div class="footer">
+        <div class="iconos-footer">
+          <i class="fa-brands fa-instagram fa-lg"></i>
+          <i class="fa-brands fa-facebook fa-lg"></i>
+        </div>
+        <p> Todos los derechos reservados</p>
+      </div>
+    </div>
+    <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+    <script src="https://kit.fontawesome.com/622b04db78.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  </body>
 </html>
