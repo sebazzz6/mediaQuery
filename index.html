@@ -12,121 +12,123 @@
   <body>
     <div class="grid-container">
       <div class="buscador">
-        <p class="indicador-buscador">Ordenar por:</p>
-        <select name="select">
+        <p class="orden">Ordenar por:</p>
+        <select name="selector">
             <option value="value1" selected>Precio</option>
-            <option value="value2" >Color</option>
-            <option value="value3">Año</option>
+            <option value="value2" >Tipo</option>
+            <option value="value3">Kits</option>
         </select>   
       </div>
       
-      <div class="menu-lateral">
-        <div class="iconos-menu">
-          <div class="iconos-izquierda">
-            <svg style="width:24px;height:24px" viewBox="0 0 24 24">
-              <path fill="currentColor" d="M18.92 2C18.72 1.42 18.16 1 17.5 1H6.5C5.84 1 5.29 1.42 5.08 2L3 8V16C3 16.55 3.45 17 4 17H5C5.55 17 6 16.55 6 16V15H18V16C18 16.55 18.45 17 19 17H20C20.55 17 21 16.55 21 16V8L18.92 2M6.5 12C5.67 12 5 11.33 5 10.5S5.67 9 6.5 9 8 9.67 8 10.5 7.33 12 6.5 12M17.5 12C16.67 12 16 11.33 16 10.5S16.67 9 17.5 9 19 9.67 19 10.5 18.33 12 17.5 12M5 7L6.5 2.5H17.5L19 7H5M7 20H11V18L17 21H13V23L7 20Z" />
-            </svg>
-
-            <span class="porte-letra">Electric Cars</span>
-            <i class="fa-solid fa-bars fa-lg" id="hidden-3"></i>
+      <div class="menu">
+        <div class="logoMenu">
+          <div class="logo">
+            <img src="assets/img/logo.png" class="logoIcono">
+            <span class="tituto">E-Bits</span>
+            <i class="fa-solid fa-bars fa-lg" id="ocultoHamb"></i>
           </div> 
         </div>  
          
-        <div class="hidden-2">
-          <div class="lista-padre">
-            <ul class="lista-hija">
-              <li>Inicio</li>
-              <li>Catálogo</li>
-              <li>Ofertas</li>
-              <li>Contacto</li>
-            </ul>
-          </div>
-        </div> 
+        <div class="ocultoLista">
+          <ul class="listado">
+            <li>Inicio</li>
+            <li>Catálogo</li>
+            <li>Ofertas</li>
+            <li>Contacto</li>
+          </ul>
+        </div>
+        
       </div>
       
-      <div class="menu-principal">
-        <div class="box-cards">
-          <div class="carta">
-            <img src='https://www.smartcargo.cl/uploads/1/1/0/2/11028147/20180320114540-73_orig.png' alt="foto-carta-1"></img>
-            <p class="texto-carta">Model: CityCar</p>
-            <div class="boton-box">
+      <div class="principal">
+        <div class="cajaTarjetas">
+          <div class="tarjeta">
+            <img src='assets/img/1.jpg' alt="Accesorios Arduino: Shield para Arduino"></img>
+            <p class="textoNombre">Shield para Arduino</p>
+            <p class="textoPrecio">$ 4.990 CLP</p>
+            <div class="botonCaja">
               <button class="boton">Ver más</button>
             </div>
           </div>
-          <div class="carta hidden-2">
-            <img src='https://www.smartcargo.cl/uploads/1/1/0/2/11028147/20180320114540-73_orig.png' alt="foto-carta-2"></img>
-            <p class="texto-carta">Model: CityCar</p>
-            <div class="boton-box">
+          <div class="tarjeta ocultoEsp">
+            <img src='assets/img/2.jpg' alt="Accesorios Arduino: Arduino Leonardo Y Conectores Grove"></img>
+            <p class="textoNombre">Mci Tic (Arduino Leonardo)</p>
+            <p class="textoPrecio">$ 31.990 CLP</p>
+            <div class="botonCaja">
               <button class="boton">Ver más</button>
             </div>
           </div>
-          <div class="carta hidden">
-            <img src='https://www.smartcargo.cl/uploads/1/1/0/2/11028147/20180320114540-73_orig.png'  alt="foto-carta-3"></img>
-            <p class="texto-carta">Model: CityCar</p>
-            <div class="boton-box">
+          <div class="tarjeta oculto">
+            <img src='assets/img/3.jpg'  alt="Accesorios Arduino: Kit Sensores Arduino para principiantes"></img>
+            <p class="textoNombre">Kit Sensores Arduino</p>
+            <p class="textoPrecio">$ 28.990 CLP</p>
+            <div class="botonCaja">
               <button class="boton">Ver más</button>
             </div>
           </div>
-          <div class="carta hidden">
-            <img src='https://www.smartcargo.cl/uploads/1/1/0/2/11028147/20180320114540-73_orig.png' alt="foto-carta-4"></img>
-            <p class="texto-carta">Model: CityCar</p>
-            <div class="boton-box">
+          <div class="tarjeta oculto">
+            <img src='assets/img/4.jpg' alt="Accesorios Arduino: Kit Sensores completo Arduino para principiantes"></img>
+            <p class="textoNombre">Kit Completo Sensores Arduino</p>
+            <p class="textoPrecio">$ 38.990 CLP</p>
+            <div class="botonCaja">
               <button class="boton">Ver más</button>
             </div>
           </div>
-          <div class="carta hidden">
-            <img src='https://www.smartcargo.cl/uploads/1/1/0/2/11028147/20180320114540-73_orig.png' alt="foto-carta-5"></img>
-            <p class="texto-carta">Model: CityCar</p>
-            <div class="boton-box">
+          <div class="tarjeta oculto">
+            <img src='assets/img/5.jpg' alt="Accesorios Arduino: Pantalla LCD TFT para Arduino"></img>
+            <p class="textoNombre">Arduino LCD</p>
+            <p class="textoPrecio">$ 3.990 CLP</p>
+            <div class="botonCaja">
               <button class="boton">Ver más</button>
             </div>
           </div>
-          <div class="carta hidden">
-            <img src='https://www.smartcargo.cl/uploads/1/1/0/2/11028147/20180320114540-73_orig.png' alt="foto-carta-6"></img>
-            <p class="texto-carta">Model: CityCar</p>
-            <div class="boton-box">
+          <div class="tarjeta oculto">
+            <img src='assets/img/6.jpg' alt="Accesorios Arduino: Shield GSM/GPRS para Arduino"></img>
+            <p class="textoNombre">Shield GSM/GPRS</p>
+            <p class="textoPrecio">$ 49.990 CLP</p>
+            <div class="botonCaja">
               <button class="boton">Ver más</button>
             </div>
           </div>
-          <div class="carta hidden">
-            <img src='https://www.smartcargo.cl/uploads/1/1/0/2/11028147/20180320114540-73_orig.png'  alt="foto-carta-7"></img>
-            <p class="texto-carta">Model: CityCar</p>
-            <div class="boton-box">
+          <div class="tarjeta oculto">
+            <img src='assets/img/7.jpg' alt="Accesorios Arduino: Arduino UNO"></img>
+            <p class="textoNombre">Arduino UNO</p>
+            <p class="textoPrecio">$ 31.990 CLP</p>
+            <div class="botonCaja">
               <button class="boton">Ver más</button>
             </div>
           </div>
-          <div class="carta hidden">
-            <img src='https://www.smartcargo.cl/uploads/1/1/0/2/11028147/20180320114540-73_orig.png' alt="foto-carta-8"></img>
-            <p class="texto-carta">Model: CityCar</p>
-            <div class="boton-box">
+          <div class="tarjeta oculto">
+            <img src='assets/img/8.jpg' alt="Accesorios Arduino: Shield CNC para Arduino UNO"></img>
+            <p class="textoNombre">Shield CNC para Arduino UNO</p>
+            <p class="textoPrecio">$ 31.990 CLP</p>
+            <div class="botonCaja">
               <button class="boton">Ver más</button>
             </div>
           </div>
         </div>
         
         <div class="paginacion">
-          <nav aria-label="Page navigation example">
-            <ul class="pagination">
-              <li class="page-item">
-                <a class="page-link" href="#" aria-label="Previous">
-                  <span aria-hidden="true">&laquo;</span>
-                </a>
-              </li>
-              <li class="page-item"><a class="page-link" href="#">1</a></li>
-              <li class="page-item"><a class="page-link" href="#">2</a></li>
-              <li class="page-item"><a class="page-link" href="#">3</a></li>
-              <li class="page-item">
-                <a class="page-link" href="#" aria-label="Next">
-                  <span aria-hidden="true">&raquo;</span>
-                </a>
-              </li>
-            </ul>
-          </nav>
+          <ul class="pagination">
+            <li class="page-item">
+              <a class="page-link" href="#" aria-label="Previous">
+                <span aria-hidden="true">&laquo;</span>
+              </a>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item">
+              <a class="page-link" href="#" aria-label="Next">
+                <span aria-hidden="true">&raquo;</span>
+              </a>
+            </li>
+          </ul>
         </div>
       </div>    
       
       <div class="footer">
-        <div class="iconos-footer">
+        <div class="iconosRS">
           <i class="fa-brands fa-instagram fa-lg"></i>
           <i class="fa-brands fa-facebook fa-lg"></i>
         </div>
