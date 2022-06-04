@@ -1,6 +1,7 @@
 html body {
     margin: 0;
     padding: 0;
+    font-family: 'Roboto', sans-serif;
     height: 100vh;   
 }
 
@@ -13,24 +14,29 @@ p {
 .grid-container {
     display: grid;
     grid-template-areas: 
-    'menu-de-navegacion filtro'
-    'menu-de-navegacion seccion-principal'
-    'pie-de-pagina seccion-principal';
+    'menuNav filtro'
+    'menuNav principal'
+    'footer footer';
     grid-template-columns: 15% 85%;
     height: 100vh;    
 }
 
-.menu-lateral {
-    grid-area: menu-de-navegacion;
+#ocultoHamb{
+    display:none
+}
+
+.menu {
+    grid-area: menuNav;
     background-color: #1967D2;
     color: aliceblue;
 }
 
 ol, ul {
     padding-top: 10px;
+    font-size: 1.5rem;
 }
 
-.lista-hija {
+.listado {
     list-style: none;
     padding-top: 16%;
     padding-right: 2rem;
@@ -41,25 +47,25 @@ li {
     padding-top: 10px;
 }
 
-.iconos-izquierda {
+.logo {
     display: flex;
     align-items: center;
     gap: 10px;
-    padding-top: 0;    
+    padding-top: 0;  
 }
 
-.porte-letra {
-    font-size: 1.2rem;
+.tituto {
+    font-size: 1.5rem;
 }
 
-.iconos-menu {
-        display: flex;
-        justify-content: center;
-        padding-top: 21%;
-        width: 100%;
+.logoMenu {
+    display: flex;
+    justify-content: center;
+    padding-top: 21%;
+    width: 100%;
 }
 
-#hidden-3 {
+#barra {
     margin-right: 20px;
     visibility: hidden;
 }
@@ -84,25 +90,24 @@ select {
     color:black;
 }
 
-p.indicador-buscador {
+p.orden {
     margin: 10px;
 }
 
-.menu-principal {
-    grid-area: seccion-principal;
+.principal {
+    grid-area: principal;
     background-color: white; 
 }
 
-.box-cards {
+.cajaTarjetas {
     display: flex;
     flex-wrap: wrap;
     gap: 4%;
     padding-top: 2%;
     padding-left: 1%;
-    
 }
 
-.boton-box {
+.botonCaja {
     display: flex;
     justify-content: center;
 }
@@ -116,19 +121,25 @@ p.indicador-buscador {
     padding: 10px;
 }
 
-.carta {
+.tarjeta {
     display: flex;
     flex-direction: column;
     border: solid 1px;
     margin: 5px;
     padding: 5px;
-    width: 20%;    
+    width: 20%;  
     background-color: #f5f5f5;
     border-radius: 13px;
 }
 
-p.texto-carta {
+p.textoNombre {
     margin: 0;
+}
+
+p.textoPrecio {
+    margin: 0;
+    font-weight: bold;
+    padding: 20px;
 }
 
 img {
@@ -140,8 +151,30 @@ img {
     justify-content: center;
 }
 
+ul.pagination {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+}
+
+ul.pagination li {display: inline;}
+
+ul.pagination li a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+ul.pagination li a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+ul.pagination li a:hover:not(.active) {background-color: #ddd;}
+
 .footer {
-    grid-area: pie-de-pagina;
+    grid-area: footer;
     background-color: #004972;
     color: white;
     display: flex;
@@ -150,29 +183,34 @@ img {
     
 }
 
-.iconos-footer {
+.iconosRS {
     padding-top: 4%;
+}
+
+.logoIcono{
+    width: 50px;
 }
 
 @media (max-width:992px) {
     .grid-container {
         display: grid;
         grid-template-areas: 
-        'menu-de-navegacion menu-de-navegacion menu-de-navegacion'
-        'filtro seccion-principal seccion-principal'
-        'pie-de-pagina pie-de-pagina pie-de-pagina';
+        'menuNav menuNav menuNav'
+        'filtro principal principal'
+        'footer footer footer';
         grid-template-columns: 20% 40% 40%;   
         height: 100vh;        
     }
-    .hidden {
+    .oculto {
         display: none;
     }
+
     .buscador {
         justify-content: flex-start;
         padding-top: 18%;
         
     }
-    p.indicador-buscador {
+    p.orden {
         margin: 0;
     }
     select {
@@ -180,7 +218,7 @@ img {
         padding-left: 9%;
         padding-right: 9%;
     }
-    .box-cards {
+    .cajaTarjetas {
         display: flex;
         flex-wrap: nowrap;
         gap: 3%;
@@ -188,28 +226,28 @@ img {
         padding-left: 1%;
         justify-content: center;
     }
-    .carta {
+    .tarjeta {
         width: 44%;
     }
-    .iconos-menu {
+    .logoMenu {
         width: 100%;
         display: flex;
         text-align: center;
         justify-content: flex-start;
         padding-top: 0
     }
-    .iconos-izquierda {
+    .logo {
         align-items: baseline;
     }
-    .lista-hija {
+    .listado {
         display: flex;
         gap: 10px;
         justify-content:center;
         align-items: center;
         padding-top: 9%;
     }
-    .menu-lateral {
-        grid-area: menu-de-navegacion;
+    .menu {
+        grid-area: menuNav;
         color: aliceblue;
         display: flex;
         justify-content: space-between;
@@ -218,51 +256,57 @@ img {
         padding-right: 20px;
         padding-top: 0;
     }
-    .paginacion {
-        padding-top: 30%;
-    }
+    
     .footer {
         padding-top: 2%;
     }
     .iconos-footer {
         padding-top: 0;
     }
-    .menu-principal{
+    .principal{
         height: 80vh;  
     }
+
+    ol, ul {
+        padding-top: 10px;
+        font-size: 1rem;
+    }
+    
 }
 
 @media (max-width:576px) {
     .grid-container {
         display: grid;
         grid-template-areas: 
-        'menu-de-navegacion'
+        'menuNav'
         'filtro'
-        'seccion-principal'
-        'pie-de-pagina';
+        'principal'
+        'footer';
         grid-template-columns: 1fr;
         height: 100vh;
     }
     
-    .hidden {
+    .oculto {
         display: none;
     }
-    .hidden-2 {
+    .ocultoLista {
         display: none;
     }
-    #hidden-3 {
-        visibility:visible;
+    
+    .ocultoEsp{
+        display:none;
     }
-    .menu-lateral {
+
+    .menu {
         display: flex;
         padding-bottom: 3%;
         width: 100vw;
     }
-    .iconos-menu {
+    .logoMenu {
         display: flex;
         padding-top: 4%;
     }
-    .iconos-izquierda {
+    .logo {
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -275,15 +319,15 @@ img {
         padding-top: 1%;
      
     }
-    .indicador-buscador {
+    .orden {
         margin: 0;
     }
 
-    .carta {
+    .tarjeta {
         width: 70%;
         margin-top: 10%;
     }
-    .box-cards {
+    .cajaTarjetas {
         padding-top: 1%;
     }
     nav {
@@ -300,11 +344,11 @@ img {
         padding-top: 0;
     }
 
-    .menu-principal{
+    .principal{
         height: 70vh;  
     }
 
-    .paginacion {
-        padding-top: 10%;
+    #ocultoHamb{
+        display:block;
     }
 }
