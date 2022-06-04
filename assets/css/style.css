@@ -1,6 +1,7 @@
 html body {
     margin: 0;
     padding: 0;
+    font-family: 'Roboto', sans-serif;
     height: 100vh;   
 }
 
@@ -15,7 +16,7 @@ p {
     grid-template-areas: 
     'menuNav filtro'
     'menuNav principal'
-    'footer principal';
+    'footer footer';
     grid-template-columns: 15% 85%;
     height: 100vh;    
 }
